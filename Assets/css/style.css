@@ -1,0 +1,183 @@
+/* demo shizzle only */
+.blocks{
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+  width: 95%;
+  margin-top: 1.5rem;
+}
+
+/* Still use global css (not utility css) for base typography etc? */
+p {
+  margin-bottom: 0.8em;
+}
+h2{
+  text-align:center;
+  padding: 20px;
+}
+/* Slider */
+.gallery-slider{
+  background: #2ecc71;
+}
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+/* GENERAL BUTTON STYLING */
+button,
+button::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+  background: blue;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  display: block;
+  font-size: 1.6em;
+  font-weight: bold;
+  margin: 1em auto;
+  padding: 10px 30px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+button::before,
+button::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #2ecc71;
+}
+/* BUTTON 3 */
+.btn-3::after {
+  height: 0;
+  left: 50%;
+  top: 50%;
+  width: 0;
+}
+
+.btn-3:hover:after {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
